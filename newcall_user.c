@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
         return 0;
     }
     buff = (char *)malloc(count * sizeof(char));
-    result = syscall(333, pid, buff, count);
+    result = syscall(333, pid, buff);
     printf("System call new_call returned %ld\n", result);
     if (result > 0)
     {
